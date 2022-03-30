@@ -1,9 +1,9 @@
 package com.vladarsenjtev;
 
-public class Triangle extends Geometric {
-    public static final double CONST = 0.5;
-    double base;
-    double height;
+public class Triangle implements Geometric {
+    private static final double CONST = 0.5;
+    private double base;
+    private double height;
 
     public Triangle(double base, double height) {
         this.base = base;
@@ -19,7 +19,7 @@ public class Triangle extends Geometric {
     }
 
     @Override
-    double area() {
+    public double area() {
         return CONST * base * height;
     }
 

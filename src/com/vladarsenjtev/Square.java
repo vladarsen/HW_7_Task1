@@ -1,8 +1,8 @@
 package com.vladarsenjtev;
 
-public class Square extends Geometric {
-    double longSquare;
-    double widthSquare;
+public class Square implements Geometric {
+    private double longSquare;
+    private double widthSquare;
 
     public Square(double longSquare, double widthSquare) {
         this.longSquare = longSquare;
@@ -18,7 +18,7 @@ public class Square extends Geometric {
     }
 
     @Override
-    double area() {
+    public double area() {
         return longSquare * widthSquare;
     }
 

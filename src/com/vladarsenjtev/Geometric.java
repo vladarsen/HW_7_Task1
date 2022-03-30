@@ -1,5 +1,5 @@
 package com.vladarsenjtev;
 
-public abstract class Geometric {
-    abstract double area();
+public interface Geometric {
+    double area();
 }

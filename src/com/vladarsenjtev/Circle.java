@@ -1,8 +1,7 @@
 package com.vladarsenjtev;
 
-public class Circle extends Geometric {
-    public static final double PI = 3.14;
-    double radius;
+public class Circle implements Geometric {
+    private double radius;
 
     public Circle(double radius) {
         this.radius = radius;
@@ -14,7 +13,7 @@ public class Circle extends Geometric {
 
     @Override
     public double area() {
-        return Math.pow(radius, 2) * PI;
+        return Math.pow(radius, 2) * Math.PI;
     }
 
     @Override
